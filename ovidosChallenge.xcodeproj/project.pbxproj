@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8467D22623C6B11500B642A4 /* albumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467D22523C6B11500B642A4 /* albumsView.swift */; };
+		849C2A6D23C767A5000FB27B /* photosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C2A6C23C767A5000FB27B /* photosView.swift */; };
 		84B1B7DF23C53C9700FF2A53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1B7DE23C53C9700FF2A53 /* AppDelegate.swift */; };
 		84B1B7E123C53C9700FF2A53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1B7E023C53C9700FF2A53 /* SceneDelegate.swift */; };
-		84B1B7E323C53C9800FF2A53 /* photosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1B7E223C53C9800FF2A53 /* photosView.swift */; };
 		84B1B7E623C53C9800FF2A53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B1B7E423C53C9800FF2A53 /* Main.storyboard */; };
 		84B1B7E823C53CA500FF2A53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B1B7E723C53CA500FF2A53 /* Assets.xcassets */; };
 		84B1B7EB23C53CA500FF2A53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B1B7E923C53CA500FF2A53 /* LaunchScreen.storyboard */; };
@@ -23,10 +23,10 @@
 
 /* Begin PBXFileReference section */
 		8467D22523C6B11500B642A4 /* albumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumsView.swift; sourceTree = "<group>"; };
+		849C2A6C23C767A5000FB27B /* photosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = photosView.swift; path = ../photosView.swift; sourceTree = "<group>"; };
 		84B1B7DB23C53C9700FF2A53 /* ovidosChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ovidosChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B1B7DE23C53C9700FF2A53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B1B7E023C53C9700FF2A53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84B1B7E223C53C9800FF2A53 /* photosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photosView.swift; sourceTree = "<group>"; };
 		84B1B7E523C53C9800FF2A53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84B1B7E723C53CA500FF2A53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84B1B7EA23C53CA500FF2A53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,12 +70,12 @@
 			children = (
 				84B1B7DE23C53C9700FF2A53 /* AppDelegate.swift */,
 				84B1B7E023C53C9700FF2A53 /* SceneDelegate.swift */,
-				84B1B7E223C53C9800FF2A53 /* photosView.swift */,
-				8467D22523C6B11500B642A4 /* albumsView.swift */,
-				84DBEDC323C5587F000A499F /* photoModel.swift */,
 				84DBEDC523C55CE5000A499F /* albumModel.swift */,
 				84DBEDC723C5615B000A499F /* albumViewModel.swift */,
+				8467D22523C6B11500B642A4 /* albumsView.swift */,
+				84DBEDC323C5587F000A499F /* photoModel.swift */,
 				84DBEDC923C5616D000A499F /* photoViewModel.swift */,
+				849C2A6C23C767A5000FB27B /* photosView.swift */,
 				84B1B7E423C53C9800FF2A53 /* Main.storyboard */,
 				84B1B7E723C53CA500FF2A53 /* Assets.xcassets */,
 				84B1B7E923C53CA500FF2A53 /* LaunchScreen.storyboard */,
@@ -162,9 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				84DBEDC823C5615B000A499F /* albumViewModel.swift in Sources */,
-				84B1B7E323C53C9800FF2A53 /* photosView.swift in Sources */,
 				8467D22623C6B11500B642A4 /* albumsView.swift in Sources */,
 				84DBEDC623C55CE5000A499F /* albumModel.swift in Sources */,
+				849C2A6D23C767A5000FB27B /* photosView.swift in Sources */,
 				84DBEDC423C5587F000A499F /* photoModel.swift in Sources */,
 				84B1B7DF23C53C9700FF2A53 /* AppDelegate.swift in Sources */,
 				84DBEDCA23C5616D000A499F /* photoViewModel.swift in Sources */,

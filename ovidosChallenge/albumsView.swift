@@ -12,13 +12,16 @@ class albumsView: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     
     var albumVM : albumViewModel!
+    
     var selectedAlbumId : Int = 0
+    
     fileprivate var tableView : UITableView = {
         let tv = UITableView(frame: .zero)
         tv.translatesAutoresizingMaskIntoConstraints = false
         return tv
     }()
-    
+
+    // MARK: - Data Implementation
     var albumsData = [albumModel](){
         didSet {
             tableView.reloadData()
@@ -27,13 +30,12 @@ class albumsView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     convenience required init(coder: NSCoder) {
         self.init()
-        
         self.albumVM = albumViewModel(delegate: self)
         
     }
     
     
-    
+    // MARK: - View Did Load Operations
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,7 +49,7 @@ class albumsView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20).isActive = true
     }
 
-    // MARK: - Table view data source
+    // MARK: - Table View Data Source
 
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -67,15 +69,16 @@ class albumsView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.selectedAlbumId = albumsData[indexPath.row].id
-        self.performSegue(withIdentifier: "albumsToPhotos", sender: nil)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "albumsToPhotos"{
-            let destination = segue.destination as! photosView
-            destination.selectedAlbumId = self.selectedAlbumId
+        let mainStoryBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        guard let photosView = mainStoryBoard.instantiateViewController(withIdentifier: "photosView") as? photosView else {
+            print("Couldn't find the view")
+            return
         }
+        
+        photosView.selectedAlbumId = albumsData[indexPath.row].id
+        present(photosView, animated: true, completion: nil)
+        
     }
+
     
 }

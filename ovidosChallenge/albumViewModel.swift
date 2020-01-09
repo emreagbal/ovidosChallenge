@@ -18,7 +18,8 @@ class albumViewModel {
         self.delegate = delegate
         fetchDataFromServer()
     }
-       
+
+    // MARK: - Data Implementation From Server
     func fetchDataFromServer(){
               
         guard let url = URL(string: apiURL) else { return }
