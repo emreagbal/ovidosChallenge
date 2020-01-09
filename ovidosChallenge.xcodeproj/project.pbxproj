@@ -3,27 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8467D22623C6B11500B642A4 /* albumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467D22523C6B11500B642A4 /* albumsView.swift */; };
 		84B1B7DF23C53C9700FF2A53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1B7DE23C53C9700FF2A53 /* AppDelegate.swift */; };
 		84B1B7E123C53C9700FF2A53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1B7E023C53C9700FF2A53 /* SceneDelegate.swift */; };
-		84B1B7E323C53C9800FF2A53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1B7E223C53C9800FF2A53 /* ViewController.swift */; };
+		84B1B7E323C53C9800FF2A53 /* photosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1B7E223C53C9800FF2A53 /* photosView.swift */; };
 		84B1B7E623C53C9800FF2A53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B1B7E423C53C9800FF2A53 /* Main.storyboard */; };
 		84B1B7E823C53CA500FF2A53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B1B7E723C53CA500FF2A53 /* Assets.xcassets */; };
 		84B1B7EB23C53CA500FF2A53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B1B7E923C53CA500FF2A53 /* LaunchScreen.storyboard */; };
+		84B1B7F423C545D800FF2A53 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 84B1B7F323C545D800FF2A53 /* SDWebImageSwiftUI */; };
+		84DBEDC423C5587F000A499F /* photoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DBEDC323C5587F000A499F /* photoModel.swift */; };
+		84DBEDC623C55CE5000A499F /* albumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DBEDC523C55CE5000A499F /* albumModel.swift */; };
+		84DBEDC823C5615B000A499F /* albumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DBEDC723C5615B000A499F /* albumViewModel.swift */; };
+		84DBEDCA23C5616D000A499F /* photoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DBEDC923C5616D000A499F /* photoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8467D22523C6B11500B642A4 /* albumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumsView.swift; sourceTree = "<group>"; };
 		84B1B7DB23C53C9700FF2A53 /* ovidosChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ovidosChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B1B7DE23C53C9700FF2A53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B1B7E023C53C9700FF2A53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84B1B7E223C53C9800FF2A53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84B1B7E223C53C9800FF2A53 /* photosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photosView.swift; sourceTree = "<group>"; };
 		84B1B7E523C53C9800FF2A53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84B1B7E723C53CA500FF2A53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84B1B7EA23C53CA500FF2A53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84B1B7EC23C53CA500FF2A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DBEDC323C5587F000A499F /* photoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoModel.swift; sourceTree = "<group>"; };
+		84DBEDC523C55CE5000A499F /* albumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumModel.swift; sourceTree = "<group>"; };
+		84DBEDC723C5615B000A499F /* albumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = albumViewModel.swift; sourceTree = "<group>"; };
+		84DBEDC923C5616D000A499F /* photoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B1B7F423C545D800FF2A53 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +70,12 @@
 			children = (
 				84B1B7DE23C53C9700FF2A53 /* AppDelegate.swift */,
 				84B1B7E023C53C9700FF2A53 /* SceneDelegate.swift */,
-				84B1B7E223C53C9800FF2A53 /* ViewController.swift */,
+				84B1B7E223C53C9800FF2A53 /* photosView.swift */,
+				8467D22523C6B11500B642A4 /* albumsView.swift */,
+				84DBEDC323C5587F000A499F /* photoModel.swift */,
+				84DBEDC523C55CE5000A499F /* albumModel.swift */,
+				84DBEDC723C5615B000A499F /* albumViewModel.swift */,
+				84DBEDC923C5616D000A499F /* photoViewModel.swift */,
 				84B1B7E423C53C9800FF2A53 /* Main.storyboard */,
 				84B1B7E723C53CA500FF2A53 /* Assets.xcassets */,
 				84B1B7E923C53CA500FF2A53 /* LaunchScreen.storyboard */,
@@ -83,6 +100,9 @@
 			dependencies = (
 			);
 			name = ovidosChallenge;
+			packageProductDependencies = (
+				84B1B7F323C545D800FF2A53 /* SDWebImageSwiftUI */,
+			);
 			productName = ovidosChallenge;
 			productReference = 84B1B7DB23C53C9700FF2A53 /* ovidosChallenge.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,9 @@
 				Base,
 			);
 			mainGroup = 84B1B7D223C53C9700FF2A53;
+			packageReferences = (
+				84B1B7F223C545D700FF2A53 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 84B1B7DC23C53C9700FF2A53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +161,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B1B7E323C53C9800FF2A53 /* ViewController.swift in Sources */,
+				84DBEDC823C5615B000A499F /* albumViewModel.swift in Sources */,
+				84B1B7E323C53C9800FF2A53 /* photosView.swift in Sources */,
+				8467D22623C6B11500B642A4 /* albumsView.swift in Sources */,
+				84DBEDC623C55CE5000A499F /* albumModel.swift in Sources */,
+				84DBEDC423C5587F000A499F /* photoModel.swift in Sources */,
 				84B1B7DF23C53C9700FF2A53 /* AppDelegate.swift in Sources */,
+				84DBEDCA23C5616D000A499F /* photoViewModel.swift in Sources */,
 				84B1B7E123C53C9700FF2A53 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84B1B7F223C545D700FF2A53 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84B1B7F323C545D800FF2A53 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84B1B7F223C545D700FF2A53 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84B1B7D323C53C9700FF2A53 /* Project object */;
 }
